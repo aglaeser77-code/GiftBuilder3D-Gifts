@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gift
+    id="custom_1781174179626"
+    name="Neues Gift"
+    cropX="0.504" cropY="0.496" cropSize="0.581"
+    category="easter"
+    preview=""
+    description="Neues Gift"
+    isFree="true">
+
+    <params>
+        <param name="scale" type="double" default="15.0" unit="mm" label="Größe"/>
+    </params>
+
+    <geometryPart id="g1" class="RotationGeometry" label="Rotation">
+        <logo u="0.500" v="0.195" width="0.150" height="0.150"/>
+        <params>
+            <param name="height" type="double" default="60.000" unit="mm" label="height"/>
+            <param name="maxRadius" type="double" default="25.000" unit="mm" label="maxRadius"/>
+        </params>
+        <curve startX="0.1463" startY="0.0000">
+            <bezier cx1="0.2282" cy1="0.1211" cx2="0.5040" cy2="0.2302" x="0.4199" y="0.3685"/>
+            <bezier cx1="0.3357" cy1="0.5068" cx2="0.1909" cy2="0.4155" x="0.1418" y="0.5262"/>
+            <bezier cx1="0.0928" cy1="0.6369" cx2="0.0941" cy2="0.7225" x="0.1590" y="0.9946"/>
+        </curve>
+    </geometryPart>
+
+</gift>
