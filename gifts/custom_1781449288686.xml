@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gift
+    id="custom_1781449288686"
+    name="Christbaumkugel mit Oese"
+    nameKey="gift.name.custom_1781449288686"
+    cropX="0.500" cropY="0.500" cropSize="0.500"
+    category="christmas"
+    preview=""
+    description="Christbaumkugel mit Oese"
+    isFree="true">
+
+    <params>
+        <param name="scale" type="double" default="15.0" unit="mm" label="Größe"/>
+    </params>
+
+    <geometryPart id="g1" class="SphereGeometry" label="Kugel">
+        <params>
+            <param name="radius" type="double" default="25.000" unit="mm" label="radius"/>
+        </params>
+    </geometryPart>
+
+    <geometryPart id="g2" class="PathGeometry" label="Pfad" uClosed="true" vClosed="false">
+        <integrate toGeometry="g1" centerU="0.5000" centerV="0.0100" normalDir="+Z" uDir="+X" vDir="+Y"/>
+        <params>
+            <param name="uLength" type="double" default="10.000" unit="mm" label="uLength"/>
+            <param name="vLength" type="double" default="20.000" unit="mm" label="vLength"/>
+        </params>
+        <curve role="u" startX="0.5000" startY="0.0000" closed="true">
+            <bezier cx1="0.5000" cy1="0.2761" cx2="0.2761" cy2="0.5000" x="0.0000" y="0.5000"/>
+            <bezier cx1="-0.2761" cy1="0.5000" cx2="-0.5000" cy2="0.2761" x="-0.5000" y="0.0000"/>
+            <bezier cx1="-0.5000" cy1="-0.2761" cx2="-0.2761" cy2="-0.5000" x="0.0000" y="-0.5000"/>
+            <bezier cx1="0.2761" cy1="-0.5000" cx2="0.5000" cy2="-0.2761" x="0.5000" y="0.0000"/>
+        </curve>
+        <curve role="v" startX="-0.0774" startY="0.1942">
+            <bezier cx1="0.4024" cy1="0.2391" cx2="0.4005" cy2="-0.2572" x="-0.0969" y="-0.1928"/>
+        </curve>
+    </geometryPart>
+
+</gift>
