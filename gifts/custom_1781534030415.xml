@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gift
+    id="custom_1781534030415"
+    name="Vase2"
+    nameKey="gift.name.custom_1781534030415"
+    cropX="0.504" cropY="0.520" cropSize="0.500"
+    category="general"
+    preview=""
+    description="Vase2"
+    isFree="true">
+
+    <params>
+        <param name="scale" type="double" default="15.0" unit="mm" label="Größe"/>
+    </params>
+
+    <geometryPart id="g1" class="RotationGeometry" label="Rotation">
+        <logo u="0.500" v="0.400" width="0.200" height="0.100" uPoints="100" reliefFraction="0.0100"/>
+        <logo2 u="0.800" v="0.350" width="0.030" height="0.030" uPoints="50" reliefFraction="0.0050"/>
+        <params>
+            <param name="height" type="double" default="60.000" unit="mm" label="height"/>
+            <param name="maxRadius" type="double" default="25.000" unit="mm" label="maxRadius"/>
+        </params>
+        <curve startX="0.0000" startY="0.0000">
+            <line x="0.2636" y="0.0000"/>
+            <bezier cx1="0.3528" cy1="-0.0012" cx2="0.5557" cy2="-0.0806" x="0.5408" y="0.0002"/>
+            <bezier cx1="0.5259" cy1="0.0810" cx2="0.1532" cy2="0.6624" x="0.1349" y="0.7258"/>
+            <bezier cx1="0.1166" cy1="0.7892" cx2="0.1103" cy2="0.8671" x="0.1587" y="0.9995"/>
+        </curve>
+    </geometryPart>
+
+</gift>
