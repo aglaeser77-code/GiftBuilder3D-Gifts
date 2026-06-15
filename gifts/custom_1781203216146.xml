@@ -14,7 +14,8 @@
     </params>
 
     <geometryPart id="g1" class="RotationGeometry" label="Rotation" vStartCapped="true">
-        <logo u="0.500" v="0.195" width="0.150" height="0.150"/>
+        <logo u="0.500" v="0.195" width="0.150" height="0.133" uPoints="100" reliefFraction="0.0100"/>
+        <logo2 u="0.875" v="0.200" width="0.050" height="0.050" uPoints="50" reliefFraction="0.0100"/>
         <params>
             <param name="height" type="double" default="50.000" unit="mm" label="height"/>
             <param name="maxRadius" type="double" default="25.000" unit="mm" label="maxRadius"/>
